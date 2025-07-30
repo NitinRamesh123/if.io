@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Clicky Page</title>
-</head>
-<body>
-  <button onclick="document.getElementById('msg').innerText = 'You clicked me!'">Click me</button>
-  <p id="msg">Waiting for click...</p>
-</body>
-</html>
+<style>
+.wiggle {
+  display: inline-block;
+  animation: wiggle 0.3s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  100% { transform: rotate(-5deg); }
+}
+</style>
+
+<p class="wiggle">💃 I'm dancing forever</p>
